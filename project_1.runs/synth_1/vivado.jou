@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Sep 19 12:31:35 2024
-# Process ID: 22216
+# Start of session at: Tue Sep 24 14:09:53 2024
+# Process ID: 23000
 # Current directory: C:/Users/conor/SOC1/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log FSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM.tcl
 # Log file: C:/Users/conor/SOC1/project_1/project_1.runs/synth_1/FSM.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :6387 MB
-# Swap memory       :15769 MB
-# Total Virtual     :22156 MB
-# Available Virtual :4459 MB
+# Swap memory       :14963 MB
+# Total Virtual     :21350 MB
+# Available Virtual :8875 MB
 #-----------------------------------------------------------
 source FSM.tcl -notrace

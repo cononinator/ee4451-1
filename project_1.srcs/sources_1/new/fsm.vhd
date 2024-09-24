@@ -38,16 +38,12 @@ architecture Behavioral of FSM is
         end if;
     end process;
     
-    process (state, Ccount, RST) --Combinatorial Process
+    process (state, Ccount) --Combinatorial Process
     begin 
         case state is 
             when IDLE =>
                 Alive <= '0';
-                if RST = '1' then
-                    next_state <= CONFIG;
-                else 
-                    next_state <= IDLE;
-                end if;
+                next_state <= CONFIG;
 
             when CONFIG =>
                 Alive <= '0';
@@ -56,17 +52,9 @@ architecture Behavioral of FSM is
                 else 
                     next_state <= CONFIG;
                 end if;    
-                
-                if RST = '0' then
-                    next_state <= IDLE;
-                end if; 
                        
             when DRIVE =>
                 Alive <= '1';
-                if RST = '0' then
-                    next_state <= IDLE;
-                    Alive <= '0';
-                end if;
             
         end case;     
     end process;
